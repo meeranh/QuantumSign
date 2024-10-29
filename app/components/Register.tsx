@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Upload, Loader2 } from 'lucide-react';
-import Link from 'next/link'
 
 export default function Register() {
 	const [username, setUsername] = useState('');
@@ -161,7 +160,7 @@ export default function Register() {
 							</Label>
 							<ul className="mt-2 ml-2 list-disc list-inside text-gray-600">
 									<li className="text-sm text-gray-500 mb-2">
-										<Link href='/gen-keypair' className='text-blue-600 underline italic'>Click me</Link> for a public key!
+										<a target="_blank" href='/gen-keypair' className='text-blue-600 underline italic'>Click me</a> for a public key!
 									</li>
 								</ul>
 							<Input
